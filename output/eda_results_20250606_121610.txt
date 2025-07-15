@@ -1,0 +1,83 @@
+Summary Statistics:
+
+                                Date       Amount
+count                            688   688.000000
+mean   2018-11-11 18:31:23.720930048   139.656657
+min              2018-01-01 00:00:00     1.750000
+25%              2018-06-02 12:00:00    13.130000
+50%              2018-11-12 12:00:00    32.830000
+75%              2019-04-18 06:00:00    68.702500
+max              2019-09-30 00:00:00  9200.000000
+std                              NaN   528.335395
+
+
+Missing Values:
+
+Date                0
+Description         0
+Amount              0
+Transaction Type    0
+Category            0
+Account Name        0
+
+
+Data Types:
+
+Date                datetime64[ns]
+Description                 object
+Amount                     float64
+Transaction Type            object
+Category                    object
+Account Name                object
+
+
+Top Categories by Frequency:
+
+Category
+Groceries                 105
+Restaurants                81
+Credit Card Payment        71
+Utilities                  63
+Shopping                   60
+Gas & Fuel                 52
+Home Improvement           36
+Coffee Shops               31
+Alcohol & Bars             25
+Internet                   21
+Mortgage & Rent            21
+Mobile Phone               21
+Music                      21
+Movies & DVDs              18
+Auto Insurance             18
+Fast Food                  16
+Haircut                    13
+Television                  8
+Electronics & Software      4
+Food & Dining               2
+Entertainment               1
+
+
+Top Categories by Amount:
+
+Category
+Credit Card Payment       33041.36
+Mortgage & Rent           24754.50
+Home Improvement          19092.87
+Groceries                  2795.21
+Utilities                  2776.00
+Restaurants                2613.02
+Shopping                   1973.24
+Gas & Fuel                 1715.17
+Mobile Phone               1680.40
+Internet                   1570.88
+Auto Insurance             1350.00
+Electronics & Software      719.00
+Alcohol & Bars              539.13
+Haircut                     378.00
+Fast Food                   330.63
+Music                       224.49
+Movies & DVDs               222.19
+Coffee Shops                115.54
+Television                  104.78
+Food & Dining                77.75
+Entertainment                 9.62

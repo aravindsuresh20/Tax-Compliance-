@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Transactions</title>
+    <style>
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px 20px;
+            width: 100%;
+            background-color: black;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            height: 60px;
+            border-radius: 10px;
+        }
+
+        .main-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding-top: 80px; /* space for fixed header */
+            box-sizing: border-box;
+        }
+
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 500px;
+            width: 90%;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        h2 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        input[type="number"] {
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            width: 80%;
+            max-width: 250px;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            text-align: center;
+            outline: none;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        input[type="number"]::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        input[type="number"]:focus {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-color: white;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.4em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+        /* Footer */
+.footer {
+    background: var(--dark);
+    padding: 20px 0;
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+}
+
+
+
+.footer-bottom {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="static/3.png" alt="Hitachi Logo" class="logo">
+    </div>
+
+    <div class="main-wrapper">
+        <div class="form-container">
+            <h2>Enter Number of Transactions</h2>
+            <form action="/predict" method="post">
+                <label for="days">How many transactions would you like to generate?</label>
+                <input type="number" id="days" name="days" required min="1" placeholder="e.g., 5, 10, 20">
+                <button type="submit">Generate Report</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+   <div class="footer-bottom">
+     Powered By Aravind Suresh
+   </div>
+ </footer>
+</body>
+</html>
